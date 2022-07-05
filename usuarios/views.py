@@ -13,3 +13,10 @@ def index(request):
 
     return render(request, 'index.html', context)
 
+def informacoes_visitante(request, id):
+
+    context = {
+        "nome_pagina": "Informações do visitante",
+    }
+
+    return render(request, 'informacoes_visitante.html', context)
